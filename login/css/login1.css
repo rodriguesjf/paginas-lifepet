@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d18;
+}
+
+.container{
+    width: 95%;
+    height: 95vh;
+
+    margin: auto;
+    margin-top: 15px;
+
+    display: flex;
+
+    background-color: white;
+}
+
+/* LADO ESQUERDO */
+
+.left-side{
+    width: 62%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 320px;
+}
+
+/* LADO DIREITO */
+
+.right-side{
+    width: 38%;
+
+    background-color: #006d8f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 75%;
+}
+
+.login-box h1{
+    color: white;
+    text-align: center;
+
+    font-size: 58px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: white;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+/* INPUT COM ÍCONE */
+
+.input-box{
+    width: 100%;
+    height: 50px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    margin-bottom: 20px;
+}
+
+.input-box i{
+    color: #a7a7a7;
+    font-size: 24px;
+
+    margin-right: 10px;
+}
+
+.input-box input{
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+}
+
+.input-box input::placeholder{
+    color: #b1b1b1;
+}
+
+/* ESQUECEU SENHA */
+
+.forgot-password{
+    color: #00d5ff;
+
+    text-decoration: underline;
+
+    font-size: 14px;
+
+    text-align: right;
+
+    margin-top: -5px;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+
+button{
+    width: 65%;
+
+    margin: auto;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #00a8e8;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #0095cf;
+}
+
+/* CADASTRO */
+
+.register-link{
+    margin-top: 35px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    text-align: center;
+}
+
+.register-link p{
+    color: white;
+    font-size: 15px;
+}
+
+.register-link a{
+    color: #00d5ff;
+    text-decoration: none;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 900px){
+
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side,
+    .right-side{
+        width: 100%;
+    }
+
+    .left-side{
+        height: 40vh;
+    }
+
+    .right-side{
+        padding: 40px 0;
+    }
+
+    .logo{
+        width: 220px;
+    }
+
+    .login-box h1{
+        font-size: 42px;
+    }
+}
