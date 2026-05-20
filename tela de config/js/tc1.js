@@ -12,7 +12,7 @@ menuButton.addEventListener('click', () => {
 
 });
 
-/* FECHAR AO CLICAR FORA */
+/* FECHAR MENU AO CLICAR FORA */
 
 document.addEventListener('click', (event) => {
 
@@ -31,13 +31,20 @@ document.addEventListener('click', (event) => {
 
 });
 
-/* EDITAR */
+/* CARDS */
 
-const editBtn =
-document.getElementById('editBtn');
+const cards =
+document.querySelectorAll('.settings-card');
 
-editBtn.addEventListener('click', () => {
+cards.forEach((card) => {
 
-    alert('Abrir edição do perfil!');
+    card.addEventListener('click', () => {
+
+        const titulo =
+        card.querySelector('h2').innerText;
+
+        alert(`Abrir ${titulo}`);
+
+    });
 
 });
