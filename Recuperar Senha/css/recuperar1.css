@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d18;
+}
+
+.container{
+    width: 95%;
+    height: 95vh;
+
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+
+    background-color: white;
+}
+
+/* ESQUERDA */
+
+.left-side{
+    width: 62%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 320px;
+}
+
+/* DIREITA */
+
+.right-side{
+    width: 38%;
+
+    background-color: #006d8f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recover-box{
+    width: 80%;
+    text-align: center;
+}
+
+.recover-box h1{
+    color: white;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.text{
+    color: white;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+.code-inputs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+.code-inputs input{
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 14px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    outline: none;
+}
+
+.resend{
+    display: block;
+
+    text-align: right;
+
+    color: #00d5ff;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+button{
+    width: 65%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #00a8e8;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #0095cf;
+}
+
+.login-link{
+    margin-top: 35px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.login-link p{
+    color: white;
+}
+
+.login-link a{
+    color: #00d5ff;
+    text-decoration: none;
+}
